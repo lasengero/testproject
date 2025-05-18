@@ -33,9 +33,6 @@ test.describe.serial('Parabank Test', () => {
 
     test('User can register and login successfully', async ({ page }) => {
 
-        // const usernameDisplayedOnPage = await page.locator('.title').textContent();
-        // console.log('Displayed Username:', usernameDisplayedOnPage);
-
         // Verify successful registration
 
         await expect(page.locator('.title')).toContainText(RegisterPage.randomUsername);
